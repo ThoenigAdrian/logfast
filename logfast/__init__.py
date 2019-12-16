@@ -2,7 +2,7 @@
     Make sure this is the first module you import in your application.
     This makes sure no other call is made first to logging.
     Otherwise other modules/libraries might overwrite the logging settings
-    This will allow you to have multiple entrypoints of your application.
+    This allows you to have multiple application entrypoints but have the same logging configuration.
 """
 import sys
 import os
