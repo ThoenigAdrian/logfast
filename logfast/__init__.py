@@ -8,7 +8,8 @@ import sys
 import os
 import logging
 
-logging.basicConfig(format='%(asctime)s  %(process)d:%(threadName)s  %(levelname)-10s |%(filename)-s.%(lineno)-4d|   %(message)s',
+logging.basicConfig(format='%(asctime)s  %(process)d:%(threadName)s  %(levelname)-10s |%(filename)-s.%(lineno)-4d|   '
+                           '%(message)s',
                     datefmt="%d|%m|%y|%H:%M:%S|%z")
 
 log = logging.getLogger()
