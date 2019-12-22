@@ -19,4 +19,5 @@ setuptools.setup(
         "Operating System :: OS Independent",
     ],
     python_requires='>=2.5',
+    setup_requires=['wheel'],
 )
