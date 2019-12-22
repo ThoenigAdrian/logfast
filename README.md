@@ -11,7 +11,7 @@ As one can see it provides the filename where the log has been created, the Proc
 , the Thread Name, and the full time (including).
 This is a package I created for my own benefit, as i found myself tired of always doing the same logging initalization.
 
-Now i can just ```pip install logfast``` whereever i am. 
+Now i can just ```pip install logfast``` wherever i am. 
 
 Most likely you will want to a have different logging format than me(so this package might be of no use to you).
 But if you want the same format feel free to use it.
