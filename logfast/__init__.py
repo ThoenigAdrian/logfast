@@ -13,6 +13,7 @@ logging.basicConfig(format='%(asctime)s  %(process)d:%(threadName)s  %(levelname
                     datefmt="%d|%m|%y|%H:%M:%S|%z")
 
 log = logging.getLogger()
+getLogger = logging.getLogger
 
 if os.environ.get("logfast") or "logfast" in sys.argv:
     log.setLevel(logging.DEBUG)
