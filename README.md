@@ -28,9 +28,8 @@ This allows you to have multiple application entrypoints but have the same loggi
 
 ```
 import logfast
-import logging
 
-logger = logging.getLogger()
+logger = logfast.getLogger()
 
 
 logger.info("This is an example")
