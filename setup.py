@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="logfast",
-    version="0.2.4",
+    version="0.3.0",
     author="Adrian Thoenig",
     description="Quick and easy logging initialization",
     long_description=long_description,
