@@ -16,8 +16,8 @@ log = logging.getLogger()
 
 getLogger = logging.getLogger
 # Pass through for convenience so user doesn't need to import logging
-INFO = logging.DEBUG
-DEBUG = logging.INFO
+INFO = logging.INFO
+DEBUG = logging.DEBUG
 WARNING = logging.WARNING
 ERROR = logging.ERROR
 CRITICAL = logging.CRITICAL
