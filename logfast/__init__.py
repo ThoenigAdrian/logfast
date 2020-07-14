@@ -26,3 +26,9 @@ if os.environ.get("logfast") or "logfast" in sys.argv:
     log.setLevel(logging.DEBUG)
 else:
     log.setLevel(logging.INFO)
+
+def setLevel(level):
+    # Sets the level for all instantiated loggers
+    loggers = [logging.getLogger(name) for name in logging.root.manager.loggerDict]
+    for logger in loggers:
+        logger.setLevel(level)
