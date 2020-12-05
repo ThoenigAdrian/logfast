@@ -8,7 +8,7 @@ Just a simple python package which does logging initialization in a certain way.
 17|12|19|00:18:58|+0100  14474:MainThread  WARNING    |__init__.py.22  |   Another one
 ```
 As one can see it provides the filename where the log has been created, the Process ID
-, the Thread Name, and the full time (including).
+, the Thread Name, and the full time (including timezone).
 This is a package I created for my own benefit, as i found myself tired of always doing the same logging initalization.
 
 Now i can just ```pip install logfast``` wherever i am. 
