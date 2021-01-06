@@ -32,3 +32,6 @@ def setLevel(level):
     loggers = [logging.getLogger(name) for name in logging.root.manager.loggerDict]
     for logger in loggers:
         logger.setLevel(level)
+
+ def printLikeFormat():
+    pass # TODO
