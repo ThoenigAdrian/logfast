@@ -22,6 +22,10 @@ WARNING = logging.WARNING
 ERROR = logging.ERROR
 CRITICAL = logging.CRITICAL
 
+# Add two additional log levels for pass and fails. Since they are important we place them above warning
+PASS = logging.warning + 1
+FAIL = logging.warning + 2
+
 if os.environ.get("logfast") or "logfast" in sys.argv:
     log.setLevel(logging.DEBUG)
 else:
