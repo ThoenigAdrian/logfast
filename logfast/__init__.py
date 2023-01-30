@@ -31,7 +31,7 @@ reset = "\x1b[0m"
 
 class CustomFormatter(logging.Formatter):
     def __init__(self):
-        previous_format = logger.handlers[0].formatter._fmt
+        previous_format = log.handlers[0].formatter._fmt
         self.formats = {
             DEBUG: grey + previous_format + reset,
             INFO: grey + previous_format + reset,
