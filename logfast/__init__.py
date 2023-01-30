@@ -49,8 +49,8 @@ class CustomFormatter(logfast.logging.Formatter):
 
 def setUnittestLogger():
     log.handlers[0].setFormatter(CustomFormatter())
-    add_logging_level('SUCCESS', logfast.WARNING + 1)
-    add_logging_level('FAIL', logfast.WARNING + 2)
+    add_logging_level('SUCCESS', WARNING + 1)
+    add_logging_level('FAIL', WARNING + 2)
 
 
 def add_logging_level(level_name, level_num, method_name=None):
