@@ -29,17 +29,17 @@ red = "\x1b[31;20m"
 bold_red = "\x1b[31;1m"
 reset = "\x1b[0m"
 
-class CustomFormatter(logfast.logging.Formatter):
+class CustomFormatter(logging.Formatter):
     def __init__(self):
         previous_format = logger.handlers[0].formatter._fmt
         self.formats = {
-            logfast.DEBUG: grey + previous_format + reset,
-            logfast.INFO: grey + previous_format + reset,
-            logfast.WARNING: yellow + previous_format + reset,
-            logfast.PASS: green + previous_format + reset,
-            logfast.FAIL: red + previous_format + reset,
-            logfast.ERROR: red + previous_format + reset,
-            logfast.CRITICAL: bold_red + previous_format + reset
+            DEBUG: grey + previous_format + reset,
+            INFO: grey + previous_format + reset,
+            WARNING: yellow + previous_format + reset,
+            PASS: green + previous_format + reset,
+            FAIL: red + previous_format + reset,
+            ERROR: red + previous_format + reset,
+            CRITICAL: bold_red + previous_format + reset
         }
 
     def format(self, record):
