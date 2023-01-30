@@ -44,7 +44,7 @@ class CustomFormatter(logfast.logging.Formatter):
 
     def format(self, record):
         log_fmt = self.formats.get(record.levelno)
-        formatter = logfast.logging.Formatter(log_fmt)
+        formatter = logging.Formatter(log_fmt)
         return formatter.format(record)
 
 def setUnittestLogger():
