@@ -21,6 +21,8 @@ DEBUG = logging.DEBUG
 WARNING = logging.WARNING
 ERROR = logging.ERROR
 CRITICAL = logging.CRITICAL
+SUCCESS = logging.WARNING + 1
+FAIL = logging.WARNING + 2
 
 grey = "\x1b[37;20m"
 yellow = "\x1b[33;20m"
@@ -36,7 +38,7 @@ class CustomFormatter(logging.Formatter):
             DEBUG: grey + previous_format + reset,
             INFO: grey + previous_format + reset,
             WARNING: yellow + previous_format + reset,
-            PASS: green + previous_format + reset,
+            SUCCESS: green + previous_format + reset,
             FAIL: red + previous_format + reset,
             ERROR: red + previous_format + reset,
             CRITICAL: bold_red + previous_format + reset
